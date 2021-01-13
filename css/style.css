@@ -147,7 +147,7 @@ body{
 
 .info2{
     color:#E74C3C;
-    padding-left: 30px;
+    padding-left: 10px;
     text-decoration: none;
 }
 /* Constitution */
@@ -175,6 +175,19 @@ h4{
 
   display: none;
 }
+
+/* Kingdoms */
+.kingdoms{
+  text-align: center;
+  font-size: 1.3em;
+  width: 800px;
+  height: 700px;
+}
+
+#kingdoms-title{
+  font-size: 5em;
+}
+
 
 /*        Footer       */
 
@@ -307,5 +320,19 @@ h4{
   font-size: 1.5em;
 }
 
+.kingdoms{
+  text-align: center;
+  font-size: 1em;
+  width: 80%;
+}
+
+.kingdoms td{
+  padding: 5px 10px;
+}
+
+#kingdoms-title{
+  font-size: 1.7em;
+  font-weight: bold;
+}
 
 }
