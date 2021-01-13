@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bgimg {
+  background: #fff;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  font-family: "Nunito", Courier, monospace;
+  font-size: 25px;
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+hr {
+  margin: auto;
+  width: 40%;
+}
+
+h1{
+  font-size: 2em;
+  color: black;
+  margin: 0;
+
+}
+
+h2{
+  color: black;
+}
+
+
+.blog{
+  font-family: 'DM Serif Display', 'Abril Fatface', cursive;
+}
+
+#x{
+  font-family: 'Jura',cursive;
+  font-weight: 100;
+  color: #808B96;
+}
+
+.h1one , .h1two{
+  font-family: Trajan Pro, Cinzel;
+}
+
+.h1one{
+  color: #E74C3C;
+}
+
+.h1two{
+  color: #2471A3;
+}
+
+</style>
+<body>
+
+<div class="bgimg">
+
+  <div class="middle">
+    <h1><span class="h1one">Sameerian Country</span><br><span class="h1two">Government</span></h1>
+    <h2>COMING SOON</h2>
+    <hr>
+    <p id="demo" style="font-size:30px"></p>
+  </div>
+
+</div>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jan 20, 2021 23:59:59").getTime();
+
+// Update the count down every 1 second
+var countdownfunction = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now an the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is over, write some text
+  if (distance < 0) {
+    clearInterval(countdownfunction);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+</body>
+</html>

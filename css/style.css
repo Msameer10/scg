@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+/*  Header   */
+
+h1{
+  font-family: Bahnschrift;
+  margin: auto;
+  text-align: center;
+  font-size: 9.3em;
+}
+
+.tagline{
+  font-size: 1.3em;
+  text-align: center;
+  margin: auto;
+  padding-top: 30px;
+  font-family: 'Nunito', sans-serif;
+  letter-spacing: 1em;
+}
+
+.w3-animate-right{
+  position:relative;
+  animation:animateright 0.6s;
+}
+@keyframes animateright{
+  from{right:-300px;opacity:0} to{right:0;opacity:1}}
+
+.w3-animate-opacity{
+  animation:opac 2s;
+}
+@keyframes opac{from{opacity:0} to{opacity:1}}
+
+.blog{
+  font-family: 'DM Serif Display', 'Abril Fatface', cursive;
+}
+
+#x{
+  font-family: 'Jura',cursive;
+  font-weight: 100;
+  color: #808B96;
+}
+
+.h1one , .h1two{
+  font-family: Trajan Pro, Cinzel;
+}
+
+.h1one{
+  color: #E74C3C;
+}
+
+.h1two{
+  color: #2471A3;
+}
+
+/*** NAvigation ***/
+
+nav.primary-navigation {
+  margin: 0 auto;
+  display: block;
+  padding: 30px 0;
+  text-align: center;
+  font-size: 16px;
+}
+nav.primary-navigation ul li {
+  list-style: none;
+  margin: 0 auto;
+  border-left: 2px solid #3ca0e7;
+  display: inline-block;
+  padding: 0 70px;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+
+}
+nav.primary-navigation li a {
+  color: black;
+}
+nav.primary-navigation li a:hover {
+  color: #3ca0e7;
+}
+nav.primary-navigation li:hover {
+  cursor: pointer;
+}
+nav.primary-navigation ul li ul {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  padding-left: 0;
+  left: 0;
+  display: none;
+  background: white;
+}
+nav.primary-navigation ul li:hover > ul,
+nav.primary-navigation ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  min-width: 250px;
+  text-align: left;
+  padding-top: 20px;
+  box-shadow: 0px 3px 5px -1px #ccc;
+}
+nav.primary-navigation ul li ul li {
+  clear: both;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 20px;
+  border-style: none;
+}
+nav.primary-navigation ul li ul li a:hover {
+  padding-left: 10px;
+  border-left: 2px solid #3ca0e7;
+  transition: all 0.3s ease;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: #3CA0E7;
+}
+
+ul li ul li a {
+  transition: all 0.5s ease;
+}
+
+
+
+
+/*    body    **/
+
+body{
+  background-color: #FFFFFF;
+}
+
+
+/*        Footer       */
+
+footer{
+  font-family: 'Open Sans Condensed', sans-serif;
+  letter-spacing: 0.1em;
+}
+
+.license{
+  font-size: 0.6em;
+}
+
+/*** Custon ScrollBar  **/
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 7px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #D5DBDB; 
+  border-radius: 7px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  /*background: linear-gradient(to bottom, #5DADE2, #48C9B0, #58D68D, #F7DC6F, #F8C471, #E59866, #EC7063);*/
+  background:  linear-gradient(to bottom, #5DADE2, #48C9B0, #58D68D);
+}
+
+
+
+/** Hidden Ones **/
+
+@media (min-width:992px) {
+  
+}
+
+/**       Mobile Version       **/
+
+@media (max-width:991px) {
+  h1{
+    font-size: 4em;
+  }
+
+  .tagline{
+    letter-spacing: 0.2em;
+    font-size: 0.6em;
+  }
+
+  .navigation{
+    display: none;
+  }
+
+  .license{
+    letter-spacing: 0.1em;
+    font-size: 0.5em;
+  }
+
+}
