@@ -12,7 +12,7 @@ h1{
   font-family: Bahnschrift;
   margin: auto;
   text-align: center;
-  font-size: 9.3em;
+  font-size: 5em;
 }
 
 .tagline{
@@ -36,15 +36,7 @@ h1{
 }
 @keyframes opac{from{opacity:0} to{opacity:1}}
 
-.blog{
-  font-family: 'DM Serif Display', 'Abril Fatface', cursive;
-}
 
-#x{
-  font-family: 'Jura',cursive;
-  font-weight: 100;
-  color: #808B96;
-}
 
 .h1one , .h1two{
   font-family: Trajan Pro, Cinzel;
@@ -125,13 +117,16 @@ a {
 }
 a:hover {
   color: #3CA0E7;
+  text-decoration: none;
 }
 
 ul li ul li a {
   transition: all 0.5s ease;
 }
 
-
+#active{
+  color: red;
+}
 
 
 /*    body    **/
@@ -140,6 +135,41 @@ body{
   background-color: #FFFFFF;
 }
 
+.head{
+    font-family: Bahnschrift;
+    padding-left: 40px;
+}
+.des{
+    font-family: Bahnschrift;
+    padding-left: 40px;
+    color: #566573;
+}
+
+.info2{
+    color:#E74C3C;
+    padding-left: 30px;
+    text-decoration: none;
+}
+/* Constitution */
+
+.con1{
+  color:black;
+  font-style: bold;
+}
+.part{
+  color:#2E86C1;
+  font-size:24px;
+}
+.article{
+  color:#138D75;
+  font-size:50;
+}
+ .line{
+width: 630px;
+height: 47px;
+border-bottom: 1px solid black;
+position:;
+}
 
 /*        Footer       */
 
@@ -189,12 +219,17 @@ footer{
 
 @media (max-width:991px) {
   h1{
-    font-size: 4em;
+    display: none;
+  }
+
+  h3{
+
+    display: none;
   }
 
   .tagline{
     letter-spacing: 0.2em;
-    font-size: 0.6em;
+    font-size: 0.8em;
   }
 
   .navigation{
@@ -205,5 +240,61 @@ footer{
     letter-spacing: 0.1em;
     font-size: 0.5em;
   }
+
+  #homediv{
+    padding: 0 20px 0 20px;
+  }
+
+  .des{
+    font-size: 1em;
+    padding: 0 15px 0 20px;
+  }
+
+  .info{
+    padding-left: 20px;
+  }
+
+  h6{
+    display: none;
+  }
+
+  .topnav {
+  overflow: hidden;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+  background-color: black;
+  color: #ffffff;
+  text-align: center;
+}
+
+.topnav a {
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav #myLinks.a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#samineon{
+  padding: 11px 0 15px 16px;
+  background-color: #F4F6F6;
+  font-size: 1em;
+}
+
 
 }
