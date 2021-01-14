@@ -187,7 +187,24 @@ h4{
 #kingdoms-title{
   font-size: 5em;
 }
+/* Ministry */
 
+
+.min_div{
+  text-align: center; 
+  margin-top: 30px;
+}
+.min_name{
+  text-decoration: none;
+  font-size: 1.8em;
+  color: #34495E;
+}
+
+.min_title{
+  text-decoration: none;
+  font-size: 1em;
+  color: #2471A3;
+}
 
 /*        Footer       */
 
