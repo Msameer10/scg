@@ -5,6 +5,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap');
+
+
+body{
+  font-family: 'Red Hat Display','Josefin Sans';
+}
 
 /*  Header   */
 
@@ -40,6 +52,7 @@ h1{
 
 .h1one , .h1two{
   font-family: Trajan Pro, Cinzel;
+  font-size: 1.2em;
 }
 
 .h1one{
@@ -150,38 +163,23 @@ body{
     padding-left: 10px;
     text-decoration: none;
 }
-/* Constitution */
 
-.con1{
-  color:black;
-  font-style: bold;
-}
-.part{
-  color:#2E86C1;
-  font-size:24px;
-}
-.article{
-  color:#138D75;
-  font-size:50;
-}
- .line{
-width: 630px;
-height: 47px;
-border-bottom: 1px solid black;
-position:;
-}
-
-h4{
-
+h2{
   display: none;
 }
 
 /* Kingdoms */
 .kingdoms{
   text-align: center;
-  font-size: 1.3em;
+  font-size: 1em;
   width: 800px;
   height: 700px;
+  font-family: 'Josefin Slab';
+  font-weight: bold;
+}
+
+tr{
+  font-size: 1.5em;
 }
 
 #kingdoms-title{
@@ -209,12 +207,9 @@ h4{
 /*        Footer       */
 
 footer{
-  font-family: 'Open Sans Condensed', sans-serif;
-  letter-spacing: 0.1em;
-}
-
-.license{
-  font-size: 0.6em;
+  font-family: 'DM Mono', sans-serif;
+  color: white;
+  background: #000000;
 }
 
 /*** Custon ScrollBar  **/
@@ -253,6 +248,14 @@ footer{
 /**       Mobile Version       **/
 
 @media (max-width:991px) {
+  
+  h2{
+  font-family: 'Libre Bakerville';
+  text-align: center;
+  margin-bottom: 30px;
+  display: block;
+  }
+
   h1{
     display: none;
   }
